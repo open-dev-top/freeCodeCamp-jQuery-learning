@@ -7,9 +7,17 @@
 // })
 
 $(function () {
-  $("input").change(function () {
-    console.log("You did something!");
+  $("p").one("click mouseenter", function () {
+    console.log("You clicked a paragraph!");
   });
+
+  $("p").on({
+    blur: function () {
+      console.log("blured!");
+    },
+  });
+
+  $("p").off("blur");
 });
 
 // mouse events: dbclick, mouseenter, mouseleave, mousedown, mouseup, hover
