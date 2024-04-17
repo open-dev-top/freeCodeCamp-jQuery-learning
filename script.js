@@ -7,7 +7,7 @@
 // })
 
 $(document).ready(function () {
-  $("button").click(function () {
-    $(".unicycle").hide();
+  $("h3").click(function () {
+    $("button").hide();
   });
 });
