@@ -7,17 +7,14 @@
 // })
 
 $(function () {
-  $("p").one("click mouseenter", function () {
-    console.log("You clicked a paragraph!");
-  });
-
-  $("p").on({
-    blur: function () {
-      console.log("blured!");
-    },
-  });
-
-  $("p").off("blur");
+  $("img").hide("slow");
+  $("img").show("fast");
+  $("h1").hide("500");
+  $("h1").show("1500");
+  $("p").slideUp("500");
+  $("p").slideDown("1500");
+  $("p").fadeOut("500");
+  $("p").fadeIn("normal");
 });
 
 // mouse events: dbclick, mouseenter, mouseleave, mousedown, mouseup, hover
