@@ -6,15 +6,27 @@
 //       });
 // })
 
-$(function () {
-  $("#go").click(function () {
-    $("#block")
-      .animate({ width: "90%" }, 1000)
-      .animate({ fontSize: "40px" }, 1000)
-      .animate({ borderLeftWidth: "30px" }, 1000);
+$("#btn").click(function () {
+  // console.log($("#test").text());
+  // console.log($("#test").html());
+  console.log($("#fcc").attr("href"));
+});
+
+$("#btn2").click(function () {
+  // $("#test").text("freeCodeCamp is owesome!");
+  // $("#test").html("freeCodeCamp is <b>owesome!</b>");
+  $("p").text((i, originText) => {
+    return (
+      "Old text:" +
+      originText +
+      "\n" +
+      "New text: freeCodeCamp is awesome! (index: " +
+      i +
+      ")"
+    );
   });
 });
 
-// .animate( properties [, duration][, easing][, complete])
-
-// .animate( properties, options)
+$("#btn3").click(function () {
+  $("#name").val("Quincy Larson");
+});
