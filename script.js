@@ -7,18 +7,22 @@
 // })
 
 $(function () {
-  $("h1").hide();
-  $("h1").fadeIn(2000).addClass("blanchedalmond");
-
-  $("p").hide();
-  $("p").fadeIn(5000, function () {
-    $(this).addClass("palevioletred");
+  $("#go").click(function () {
+    $("#block").animate(
+      {
+        opacity: 0.5,
+        marginLeft: "+=50",
+        height: "400px",
+      },
+      3000,
+      "linear",
+      function () {
+        $(this).after("<div>Animation complete.</div>");
+      }
+    );
   });
-
-  $("img").on("click", function () {
-    console.log("stop");
-    $("p").stop();
-  });
-
-  $("p").hide(500).delay(2000).show(300);
 });
+
+// .animate( properties [, duration][, easing][, complete])
+
+// .animate( properties, options)
