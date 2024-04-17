@@ -6,8 +6,10 @@
 //       });
 // })
 
-$(document).ready(function () {
-  $("h3").click(function () {
-    $("button").hide();
+$(function () {
+  $("p").mouseleave(function () {
+    console.log("You clicked a paragraph!");
   });
 });
+
+// dbclick, mouseenter, mouseleave, mousedown, mouseup, hover
