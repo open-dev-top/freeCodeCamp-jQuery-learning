@@ -7,9 +7,11 @@
 // })
 
 $(function () {
-  $("p").mouseleave(function () {
-    console.log("You clicked a paragraph!");
+  $("input").change(function () {
+    console.log("You did something!");
   });
 });
 
-// dbclick, mouseenter, mouseleave, mousedown, mouseup, hover
+// mouse events: dbclick, mouseenter, mouseleave, mousedown, mouseup, hover
+
+// form events: foucs, blur, change
