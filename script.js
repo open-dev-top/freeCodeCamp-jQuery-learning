@@ -7,14 +7,10 @@
 // })
 
 $(function () {
-  $("img").hide("slow");
-  $("img").show("fast");
-  $("h1").hide("500");
-  $("h1").show("1500");
-  $("p").slideUp("500");
-  $("p").slideDown("1500");
-  $("p").fadeOut("500");
-  $("p").fadeIn("normal");
+  //   $("h1").toggle("500");
+  //   $("h1").toggle("normal");
+  $("p").slideToggle("2000");
+  $("p").fadeToggle("2000");
 });
 
 // mouse events: dbclick, mouseenter, mouseleave, mousedown, mouseup, hover
